@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48A9BA9A-B921-42CC-935D-E1BCD456A40D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SocketClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>220A4AC10F9803A549C50B3D02779CADE24F3652</key>
+		<string>https://github.com/FerencYAO/socketManager</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SocketClient.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>220A4AC10F9803A549C50B3D02779CADE24F3652</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FerencYAO/socketManager</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>220A4AC10F9803A549C50B3D02779CADE24F3652</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>220A4AC10F9803A549C50B3D02779CADE24F3652</string>
+			<key>IDESourceControlWCCName</key>
+			<string>socketManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>

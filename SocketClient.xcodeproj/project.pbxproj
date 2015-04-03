@@ -18,9 +18,8 @@
 		1C2F0215170AB5A600DA3F2A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C2F0214170AB5A600DA3F2A /* Default-568h@2x.png */; };
 		1C2F0218170AB5A600DA3F2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2F0217170AB5A600DA3F2A /* ViewController.m */; };
 		1C2F021B170AB5A600DA3F2A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C2F0219170AB5A600DA3F2A /* ViewController.xib */; };
-		1C2F0227170AB6AE00DA3F2A /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2F0225170AB6AE00DA3F2A /* AsyncUdpSocket.m */; };
 		1C2F022A170ABA3600DA3F2A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2F0229170ABA3600DA3F2A /* CFNetwork.framework */; };
-		D8C55E3D1ACBDBDB00A3853E /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C55E3C1ACBDBDB00A3853E /* SocketManager.m */; };
+		D88A25FD1ACE3CF10035265E /* libSocMager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA96D21ACE3C6500647A32 /* libSocMager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +39,9 @@
 		1C2F0216170AB5A600DA3F2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1C2F0217170AB5A600DA3F2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1C2F021A170AB5A600DA3F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		1C2F0224170AB6AE00DA3F2A /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
-		1C2F0225170AB6AE00DA3F2A /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
 		1C2F0229170ABA3600DA3F2A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		D8C55E3B1ACBDBDB00A3853E /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
-		D8C55E3C1ACBDBDB00A3853E /* SocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		D8EA96D21ACE3C6500647A32 /* libSocMager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocMager.a; sourceTree = "<group>"; };
+		D8EA96D31ACE3C6500647A32 /* SocMager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocMager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88A25FD1ACE3CF10035265E /* libSocMager.a in Frameworks */,
 				1C2F022A170ABA3600DA3F2A /* CFNetwork.framework in Frameworks */,
 				1C2F01FF170AB5A600DA3F2A /* UIKit.framework in Frameworks */,
 				1C2F0201170AB5A600DA3F2A /* Foundation.framework in Frameworks */,
@@ -65,7 +63,6 @@
 		1C2F01F2170AB5A600DA3F2A = {
 			isa = PBXGroup;
 			children = (
-				1C2F0221170AB6AE00DA3F2A /* AsyncSocketManager */,
 				1C2F0204170AB5A600DA3F2A /* SocketClient */,
 				1C2F01FD170AB5A600DA3F2A /* Frameworks */,
 				1C2F01FC170AB5A600DA3F2A /* Products */,
@@ -94,6 +91,8 @@
 		1C2F0204170AB5A600DA3F2A /* SocketClient */ = {
 			isa = PBXGroup;
 			children = (
+				D8EA96D21ACE3C6500647A32 /* libSocMager.a */,
+				D8EA96D31ACE3C6500647A32 /* SocMager.h */,
 				1C2F020D170AB5A600DA3F2A /* AppDelegate.h */,
 				1C2F020E170AB5A600DA3F2A /* AppDelegate.m */,
 				1C2F0216170AB5A600DA3F2A /* ViewController.h */,
@@ -116,17 +115,6 @@
 				1C2F0214170AB5A600DA3F2A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1C2F0221170AB6AE00DA3F2A /* AsyncSocketManager */ = {
-			isa = PBXGroup;
-			children = (
-				1C2F0224170AB6AE00DA3F2A /* AsyncUdpSocket.h */,
-				1C2F0225170AB6AE00DA3F2A /* AsyncUdpSocket.m */,
-				D8C55E3B1ACBDBDB00A3853E /* SocketManager.h */,
-				D8C55E3C1ACBDBDB00A3853E /* SocketManager.m */,
-			);
-			path = AsyncSocketManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,8 +186,6 @@
 				1C2F020B170AB5A600DA3F2A /* main.m in Sources */,
 				1C2F020F170AB5A600DA3F2A /* AppDelegate.m in Sources */,
 				1C2F0218170AB5A600DA3F2A /* ViewController.m in Sources */,
-				D8C55E3D1ACBDBDB00A3853E /* SocketManager.m in Sources */,
-				1C2F0227170AB6AE00DA3F2A /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +271,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocketClient/SocketClient-Prefix.pch";
 				INFOPLIST_FILE = "SocketClient/SocketClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketClient",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +286,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocketClient/SocketClient-Prefix.pch";
 				INFOPLIST_FILE = "SocketClient/SocketClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketClient",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SocketManager.h"
+#import "SocMager.h"
 
 @interface ViewController () <SocketManagerDelegate>
 
@@ -20,14 +20,13 @@
     [super viewDidLoad];
     _SendMessage.delegate=self;
     [_SendMessage setTag:2];
-    [[SocketManager shareInstance] connectToHost:@"192.168.1.26" onPort:34567];
-    [SocketManager shareInstance].delegate = self;
+    [[SocMager shareInstance] connectToHost:@"192.168.1.26" onPort:34567 delegate:self];
 }
 
 -(void)viewDidUnload
 {
     [super viewDidUnload];
-    [[SocketManager shareInstance] close];
+    [[SocMager shareInstance] close];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
@@ -45,7 +44,7 @@
     {
         NSLog(@"----sendData----%@-----", _SendMessage.text);
         NSData *sendData = [_SendMessage.text dataUsingEncoding:NSUTF8StringEncoding];
-        [[SocketManager shareInstance] sendData:sendData];
+        [[SocMager shareInstance] sendData:sendData];
     }
     else
     {
